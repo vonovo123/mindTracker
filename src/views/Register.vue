@@ -1,5 +1,5 @@
 <template>
-  <div class="home">Welcome! MindTracker!!</div>
+  <div class="home">Welcome! Our Register!!</div>
 </template>
 
 <script>
