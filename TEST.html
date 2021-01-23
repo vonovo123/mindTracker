@@ -1,0 +1,19 @@
+<head></head>
+<body>
+    <button onclick="
+        fetch('/JSTEST/data.json')
+            .then(pResponse => pResponse.text())
+            .then(pJSON => console.log(pJSON));
+    
+    ">JSON 로컬 읽기</button>
+    
+    <button onclick="
+        fetch('https://jsonplaceholder.typicode.com/posts/1')
+            .then(pResponse => pResponse.text())
+            .then(pJSON => console.log(pJSON));
+    
+    ">JSON 원격 읽기</button>
+</body>
+
+<script>
+</script>

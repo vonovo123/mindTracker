@@ -1,0 +1,26 @@
+<head></head>
+<body></body>
+<script>
+    function RequestData(){
+        return Math.random() > 0.5;
+    }
+
+    const oProductReady = new Promise(function (fnResolve, fnReject) {
+        let bStatus = RequestData();
+
+        if(bStatus) {
+            fnResolve("상품을 성공적으로 배송하였습니다.");
+        } else {
+            fnReject("죄송합니다. 상품이 준비되지 않았습니다.");
+        }
+    });
+
+    oProductReady.then(function(pResult){
+        console.log(pResult);
+    }, function(pErrMsg){
+        console.log(pErrMsg);
+    }
+    )
+
+    
+</script>
