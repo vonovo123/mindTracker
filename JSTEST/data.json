@@ -1,7 +1,0 @@
-{
-    "item" : [
-        {"name" : "홍길동1" , "age" : 31, "email" : "vonovo1@naver.com"},
-        {"name" : "홍길동2" , "age" : 32, "email" : "vonovo2@naver.com"},
-        {"name" : "홍길동3" , "age" : 33, "email" : "vonovo3@naver.com"}
-    ]
-}
