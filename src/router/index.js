@@ -1,9 +1,8 @@
 import Vue from 'vue' //Vue 컴포넌트
 import VueRouter from 'vue-router' // Vue 라우터 Library
 import Home from '../views/Home.vue' //Home 컴포넌트
-import Things from '../views/Things.vue' //Home 컴포넌트
-import Register from '../views/Register.vue' //Home 컴포넌트
-import Thing from '../views/Thing.vue'
+import main_page from '../components/main_page.vue'
+import sub_page from '../components/sub_page.vue'
 
 Vue.use(VueRouter) // Vue 컴포넌트에 VueRouter를 사용한다는 것을 명시해줍니다.
 //routes 는 VueRouter에 routing 할 route 객체로 이루어진 배열입니다.
@@ -11,23 +10,17 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: main_page
   },
   {
-    path: '/things',
-    name: 'things',
-    component: Things
+    path: '/main',
+    name: 'main_page',
+    component: main_page
   },
   {
-    path: '/register',
-    name: 'register',
-    component: Register
-    ///product/regist path로 /regist path에 접근할 수 있습니다.
-  },
-  {
-    path: '/things/thing/:index',
-    name: 'thing',
-    component: Thing
+    path: '/sub',
+    name: 'sub_page',
+    component: sub_page
   }
 ]
 //명시한 routes를 이용하는 VueRouter를 생성합니다.
